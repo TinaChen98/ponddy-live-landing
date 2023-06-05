@@ -1,0 +1,57 @@
+<section class="thematic">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="thematic__content col-11 col-md-12">
+        <div class="title">
+          Thematic Units with Rich Topics
+        </div>
+        <div class="small-title">
+          Aligned with HSK standard
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div *ngIf="web" class="thematic__card">
+        <div *ngFor="let card of cards" class="pr-16 item col-lg-3">
+          <div class="top">
+            <div class="icon">
+              <img [lazyLoad]="card.img">
+            </div>
+            <div class="lvl">
+              {{ card.lvl }}
+            </div>
+          </div>
+          <div class="title">
+            {{ card.title }}
+          </div>
+          <div class="description">
+            {{ card.description }}
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="mobile" class="thematic__card">
+        <carousel [cellWidth]="310" [height]="330" [arrows]="false">
+          <div *ngFor="let card of cards" class="carousel-cell">
+            <div class="pl-32 item col-lg-3">
+              <div class="top">
+                <div class="icon">
+                  <img [lazyLoad]="card.img">
+                </div>
+                <div class="lvl">
+                  {{ card.lvl }}
+                </div>
+              </div>
+              <div class="title">
+                {{ card.title }}
+              </div>
+              <div class="description">
+                {{ card.description }}
+              </div>
+            </div>
+          </div>
+        </carousel>
+      </div>
+    </div>
+  </div>
+</section>

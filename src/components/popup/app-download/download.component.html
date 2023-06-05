@@ -1,0 +1,59 @@
+<div class="popup-download">
+  <div mat-dialog-title class="close-btn">
+    <button mat-button mat-dialog-close>
+      <img [defaultImage]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/fork_icon.svg'" [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/fork_icon.svg'" >
+    </button>
+  </div>
+  <div mat-dialog-content>
+    <div class="popup-download__content">
+      <div class="left">
+        <div class="title">
+          <div>Download app</div>
+          <div>to enroll </div>
+          <div>in live lessons</div>
+        </div>
+        <div *ngIf="mobile" class="phone">
+          <img [defaultImage]="carouselImageList_small[0]" [lazyLoad]="carouselImageList[0]" alt="apple store">
+        </div>
+        <div *ngIf="web" class="step">
+          <div class="step__gif">
+            <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/step-download.gif'">
+          </div>
+          <div class="step__item">
+            <ol>
+              <li>Download & Open the app</li>
+              <li>Click on "Live Lessons"</li>
+              <li>Book your lesson</li>
+            </ol>
+          </div>
+        </div>
+        <div class="download">
+          <div class="download__title">Download app to enroll live lessons</div>
+          <div class="download__btn">
+            <a class="pr-24" href="https://apps.apple.com/app/id1569799653" target="_blank">
+              <img alt="apple store" [lazyLoad]="carouselImageList[1]">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.ponddy.dictionary" target="_blank">
+              <img alt="google play" [lazyLoad]="carouselImageList[2]">
+            </a>
+          </div>
+        </div>
+        <div *ngIf="mobile" class="step">
+          <div class="step__gif">
+            <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/step-download.gif'">
+          </div>
+          <div class="step__item">
+            <ol>
+              <li>Download & Open the app</li>
+              <li>Click on "Live Lessons"</li>
+              <li>Book your lesson</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="web" class="phone">
+        <img [defaultImage]="carouselImageList_small[0]" [lazyLoad]="carouselImageList[0]" alt="apple store">
+      </div>
+    </div>
+  </div>
+</div>

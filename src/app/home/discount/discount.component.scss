@@ -1,0 +1,68 @@
+.discount {
+  padding-top: 32px;
+  background: #EBF2F5;
+
+  @media (max-width: 992px) {
+    padding: 50px 24px;
+  }
+
+  .discount-mobile {
+    display: flex;
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 1px;
+    color: #656565;
+    @media (max-width: 992px) {
+      text-align: left;
+      padding-bottom: 24px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: end;
+    img {
+      max-width: 120px;
+    }
+  }
+
+  &__content {
+    text-align: center;
+
+    .button {
+      @media (max-width: 992px) {
+        margin-left: 16px;
+      }
+
+      .pd_shadow_10 {
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .btn_general-primary {
+        border: none;
+        margin-top: 25px;
+        @media (max-width: 992px) {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      a {
+        display: inline-block;
+        max-width: 220px;
+        border-radius: 32px;
+
+        @media (max-width: 992px) {
+          margin-bottom: 15px;
+        }
+      }
+      .md-r {
+        margin-right: 21px;
+      }
+    }
+  }
+}

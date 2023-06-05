@@ -1,0 +1,214 @@
+.live-lessons-learning {
+  background: linear-gradient(to top right, #E9FCFF 50%, #F6FDFF 50%);
+  padding: 80px 0 91px 0;
+
+  .learning {
+
+    &__title {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 84px;
+      letter-spacing: 1px;
+      color: #2D3942;
+      text-align: center;
+      padding-bottom: 35px;
+      @media (max-width: 991px) {
+        font-size: 30px;
+        line-height: 44px;
+      }
+    }
+
+    &__small-title {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #6ACFED;
+      @media (max-width: 991px) {
+        padding-bottom: 72px;
+      }
+    }
+
+    &__enroll-title {
+      padding-top: 42px;
+    }
+
+    &__step {
+      display: flex;
+      justify-content: center;
+      @media (max-width: 991px) {
+        display: grid;
+      }
+      &__item {
+        position: relative;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        color: #2D3942;
+        padding-left: 24px;
+
+        @media (max-width: 991px) {
+          font-size: 16px;
+          line-height: 26px;
+          display: flex;
+          align-items: center;
+          padding-left: 0px;
+        }
+
+        .icon {
+          display: flex;
+          justify-content: center;
+
+          .icon-w {
+            max-width: 136px;
+            display: flex;
+            justify-content: center;
+          }
+        }
+
+        .bottom-icon {
+          padding-left: 45px;
+        }
+      }
+
+      &__title {
+        display: flex;
+        align-items: center;
+        .number {
+          font-weight: normal;
+          font-size: 56px;
+          line-height: 84px;
+          letter-spacing: 2px;
+          color: #3B9FBE;
+          padding-right: 16px;
+        }
+        .icon {
+          cursor: pointer;
+          padding-left: 10px;
+          @media (max-width: 991px) {
+            padding-left: 0px;
+          }
+        }
+        .description {
+          width: 170px;
+          @media (max-width: 991px) {
+            width: 150px;
+          }
+
+          &__img {
+            max-width: 164px;
+            padding-top: 16px;
+          }
+        }
+
+        .icon-light-buld {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          margin-left: 10px;
+          background: url("https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/light-bulb-hover.svg");
+          background: url("https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/light-bulb.svg");
+          background-size: cover;
+
+          &:hover {
+            background: url("https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/light-bulb-hover.svg");
+          }
+        }
+      }
+
+      &__img {
+        width: 102px;
+      }
+
+      &__btn {
+        display: flex;
+        justify-content: center;
+        margin-left: 48px;
+      }
+
+      .download-hide {
+        visibility: hidden;
+      }
+
+      .btn_general-primary {
+        @media (max-width: 991px) {
+          margin-top: 8px;
+        }
+        img {
+          width: 100%;
+          @media (max-width: 991px) {
+            max-width: 20px;
+            margin-right: 4px;
+          }
+        }
+
+        &:hover {
+          background: #93E2FA;
+          text-decoration: none;
+        }
+        &:active {
+          background: #3B9FBE;
+        }
+
+        &.active {
+          background: #3B9FBE;
+        }
+      }
+
+      &__btn-img {
+        max-width: 220px;
+        a {
+          display: block;
+          padding-top: 16px;
+        }
+      }
+
+      &__textbox {
+        background-image: url('https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/textbox-blue-w.svg');
+        background-size: 100% 100%;
+        width: 343px;
+        position: absolute;
+        left: 245px;
+        top: 210px;
+        @media (max-width: 991px) {
+          background-image: url('https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/textbox-blue-p.svg');
+          position: initial;
+          width: 341px;
+        }
+
+        &__title {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 26px;
+          letter-spacing: 1px;
+          color: #2D3942;
+          padding: 60px 30px 16px 30px;
+        }
+
+        &__zoom {
+          padding: 0 50px 35px 50px;
+          @media (max-width: 991px) {
+            padding: 0 62px 35px 62px;
+          }
+          a {
+            display: block;
+          }
+        }
+      }
+
+      &__arrows {
+        padding: 55px 16px;
+        @media (max-width: 991px) {
+          padding: 24px 0px;
+          display: flex;
+          justify-content: center;
+          img {
+            max-width: 22px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.communities {
+  background-image: url('https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/communities-bg-w.png');
+  padding: 100px 0px 85px 0px;
+  text-align: center;
+  @media (max-width: 991px) {
+    background-image: url('https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/communities-bg-p.png');
+    padding: 50px 17px 60px 17px;
+  }
+  .communities__content {
+    .title {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #2D3942;
+      padding-bottom: 23px;
+
+      @media (max-width: 991px) {
+        font-size: 30px;
+        line-height: 44px;
+        color: #2D3942;
+        padding-bottom: 21px;
+      }
+    }
+
+    .description {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 1px;
+      color: #2D3942;
+      padding-bottom: 55px;
+
+      @media (max-width: 991px) {
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 48px;
+      }
+    }
+
+    .user-content {
+      display: flex;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 50px;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 28px;
+      height: 230px;
+
+      @media (max-width: 991px) {
+        text-align: left;
+        font-size: 18px;
+        line-height: 34px;
+        height: auto;
+      }
+
+      .comma {
+        min-width: 50px;
+        @media (max-width: 991px) {
+          min-width: 24px;
+          padding: 0;
+          img {
+            width: 24px;
+          }
+        }
+      }
+
+      .comma-m {
+        padding-left: 12px;
+      }
+
+      .comma-bottom {
+        display: flex;
+        align-items: flex-end;
+      }
+    }
+
+    .user-from {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 26px;
+      text-align: center;
+      color: #FFFFFF;
+      padding-bottom: 69px;
+
+      @media (max-width: 991px) {
+        font-size: 20px;
+        line-height: 26px;
+        padding-bottom: 60px;
+      }
+    }
+
+    .user-img {
+      display: flex;
+      justify-content: center;
+
+      img {
+        cursor: pointer;
+        border-radius: 600px;
+        max-width: 100px;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+
+        @media (max-width: 991px) {
+          width: 70px;
+        }
+      }
+
+      .mr-42 {
+        margin-right: 42px;
+        @media (max-width: 991px) {
+          margin-right: 24px;
+        }
+      }
+
+      .user-opacity {
+        opacity: 1;
+      }
+
+    }
+  }
+}

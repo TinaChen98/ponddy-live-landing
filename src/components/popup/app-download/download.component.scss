@@ -1,0 +1,198 @@
+::ng-deep.cdk-overlay-pane {
+  max-height: 910px!important;
+  border-radius: 24px;
+  ::-webkit-scrollbar {
+    /*隱藏滾輪*/
+    display: none;
+    }
+  .mat-dialog-container {
+    border-radius: 48px;
+    @media (max-width: 1331px) {
+      border-radius: 24px;
+    }
+
+    @media (max-width: 991px) {
+      // margin-top: 50px;
+      // height: 90%;
+    }
+  }
+}
+
+
+.popup-download {
+  background-image: url('https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/popup-bg-w.png');
+  background-size: cover;
+  position: relative;
+  margin: -24px;
+  overflow-x: hidden;
+  padding: 70px 0 75px 0;
+  border-radius: 48px;
+  @media (max-width: 1331px) {
+    height: 90vh;
+    border-radius: 24px;
+  }
+  @media (max-width: 991px) {
+    background-image: url('https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/popup-bg-p.png');
+    padding: 0;
+    background-size: 100% 100%;
+    height: auto;
+  }
+
+  .close-btn {
+    button {
+      background: #FFFFFF;
+      box-shadow: 0px 2px 4px rgba(45, 116, 138, 0.17);
+      border: none;
+      border-radius: 25px;
+      padding: 2px 13px 4px 13px;
+      outline: none;
+    }
+  }
+
+  ::ng-deep.mat-dialog-content {
+    max-height: none;
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    @media (max-width: 991px) {
+      position: fixed;
+      right: 36px;
+      top: 7%;
+      z-index: 5;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    padding: 0 48px;
+    @media (max-width: 991px) {
+      padding: 0 24px 0px 24px;
+    }
+    .left {
+      // padding-left: 160px;
+    }
+    .title {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 58px;
+      letter-spacing: 1px;
+      color: #1B7892;
+      // padding-top: 158px;
+      padding: 50px 0;
+      @media (max-width: 991px) {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 45px;
+        padding: 70px 0px 30px 12px;
+      }
+    }
+    .step {
+      display: flex;
+      padding-bottom: 84px;
+      @media (max-width: 991px) {
+        display: block;
+        padding-bottom: 0px;
+        background-color: #FBFBFB;
+        margin-top: 40px;
+        border-radius: 24px;
+        padding: 12px;
+        margin-bottom: 40px;
+      }
+      &__gif {
+        max-width: 273px;
+        padding-bottom: 38px;
+        @media (max-width: 991px) {
+          display: flex;
+          justify-content: center;
+          margin-left: 12px;
+          padding-bottom: 12px;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      &__item {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 20px;
+        letter-spacing: 1.5px;
+        color: #2D3942;
+        @media (max-width: 991px) {
+          font-size: 16px;
+          line-height: 20px;
+          color: #576168;
+        }
+        ol {
+          li {
+            padding-bottom: 22px;
+          }
+        }
+      }
+    }
+
+    .download {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 37px;
+      letter-spacing: 1px;
+      color: #969CA0;
+      @media (max-width: 991px) {
+        font-size: 15px;
+        line-height: 28px;
+      }
+
+      &__title {
+        padding-bottom: 26px;
+        @media (max-width: 991px) {
+          padding-bottom: 32px;
+          text-align: center;
+        }
+      }
+      &__btn {
+        a {
+          img {
+            width: auto;
+          }
+        }
+        @media (max-width: 991px) {
+          min-width: 290px;
+          text-align: center;
+          a {
+            display: block;
+            background-color: #FFFFFF;
+            border-radius: 32px;
+
+
+          }
+        }
+      }
+      .pr-24 {
+        padding-right: 24px;
+        @media (max-width: 991px) {
+          padding-right: 0;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    .phone {
+      max-width: 600px;
+      margin-left: -50px;
+      @media (max-width: 991px) {
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-bottom: 70px;
+      }
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

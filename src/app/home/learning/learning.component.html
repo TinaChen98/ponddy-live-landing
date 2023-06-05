@@ -1,0 +1,145 @@
+<section class="live-lessons-learning">
+  <div class=" justify-content-center">
+    <div class="learning col-12 col-md-12">
+      <div class="learning__title">
+        Start learning Chinese with Ponddy
+      </div>
+      <div *ngIf="mobile" class="learning__small-title">
+        Sign up easily and start learning Chinese fun and effective.
+      </div>
+    </div>
+  </div>
+
+  <div class=" justify-content-center">
+    <div *ngIf="web" class="learning__step">
+      <div class="pr-16 learning__step__item">
+        <div class="icon">
+          <div class="icon-w">
+            <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/learning-step-1-w.svg'">
+          </div>
+        </div>
+        <div class="learning__step__title">
+          <div class="number">1</div>
+          <div>Download app & Book your lesson</div>
+        </div>
+        <div class="learning__step__btn">
+          <div style="text-align: center;">
+            <a class="btn_general-primary text_btn" [class.active]="!onDownload" (click)="clickDownload()">Download now</a>
+            <div class="learning__step__btn-img" [class.download-hide]="onDownload">
+              <a href="https://apps.apple.com/app/id1569799653" target="_blank"><img src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/app-store-w.svg"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.ponddy.dictionary" target="_blank"><img src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/google-play-w.svg"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="learning__step__arrows">
+        <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/arrows-right.svg'">
+      </div>
+
+      <div class="pr-16 learning__step__item">
+        <div class="icon">
+          <div class="icon-w">
+            <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/learning-step-2-w.svg'">
+          </div>
+        </div>
+        <div class="learning__step__title">
+          <div class="number">2</div>
+          <div>Receive Confirmation & Follow steps</div>
+          <div class="icon-light-buld" (click)="clickZoom()">
+          </div>
+        </div>
+        <div *ngIf="onZoom" class="learning__step__textbox">
+          <div class="learning__step__textbox__title">Download Zoom to attend your lesson</div>
+          <div class="learning__step__textbox__zoom">
+            <a href="https://zoom.us/download" target="_blank">
+              <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/download-zoom.svg'">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="learning__step__arrows">
+        <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/arrows-right.svg'">
+      </div>
+
+      <div class="pr-16 learning__step__item">
+        <div class="icon">
+          <div class="icon-w">
+            <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/learning-step-3-w.svg'">
+          </div>
+        </div>
+        <div class="learning__step__title">
+          <div class="number">3</div>
+          <div>Practice to confirm your learning</div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="mobile" class="learning__step col-12">
+      <div class="learning__step__item">
+        <div class="learning__step__img">
+          <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/learning-step-1-p.svg'">
+        </div>
+        <div class="learning__step__title">
+          <div class="number">1</div>
+          <div class="description">
+            Download app & Book your lesson
+            <a class="btn_general-primary text_btn" href="http://onelink.to/ponddydictionary">
+              <img class="" [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/download-icon.svg'">
+              <span>Download</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="learning__step__arrows">
+        <div>
+          <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/arrows-bottom.svg'">
+        </div>
+      </div>
+
+      <div class="learning__step__item">
+        <div class="learning__step__img">
+          <div>
+            <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/learning-step-2-p.svg'">
+          </div>
+        </div>
+        <div class="learning__step__title">
+          <div class="number">2</div>
+          <div class="description">
+            <div>Receive Confirmation & Follow steps</div>
+          </div>
+          <div class="icon" (click)="clickZoom()">
+            <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/light-bulb.svg'">
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="this.onZoom" class="learning__step__textbox">
+        <div class="learning__step__textbox__title">Download Zoom to attend your lesson</div>
+        <div class="learning__step__textbox__zoom">
+          <a href="https://zoom.us/download" target="_blank">
+            <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/download-zoom.svg'">
+          </a>
+        </div>
+      </div>
+
+      <div class="learning__step__arrows">
+        <div>
+          <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/arrows-bottom.svg'">
+        </div>
+      </div>
+
+      <div class="learning__step__item">
+        <div class="learning__step__img">
+          <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/learning-step-3-p.svg'">
+        </div>
+        <div class="learning__step__title">
+          <div class="number">3</div>
+          <div class="description">Practice to confirm your learning</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,539 @@
+<section class="faq">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-11 text-center">
+        <h1>
+          <img src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-icon.svg">
+          Frequently asked questions
+        </h1>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-11">
+        <mat-accordion>
+          <mat-expansion-panel id="faq_item_0" (afterExpand)="onFocus(-1,'faq_item')" (opened)="clickPanel(true,'faq_item_0')" (closed)="clickPanel(false,'faq_item_0')" expanded="false" class="live-lessons-border-bottom">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div></div>
+                <div class="title">
+                    <img *ngIf="faqOpen!='faq_item_0'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-open.svg">
+                    <img *ngIf="faqOpen=='faq_item_0'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-close.svg">
+                  <div>Account</div>
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="text">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-12">
+                  <h2 id="faq_account" class="live-lessons-border-bottom">New user</h2>
+                  <mat-accordion>
+                    <mat-expansion-panel id="faq_account_0" (afterExpand)="onFocus(-1,'faq_account')" (opened)="clickSmallPanel(true,'faq_account_0')" (closed)="clickSmallPanel(false,'faq_account_0')" expanded="false" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            1. How does Live Lessons work?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_account_0'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_account_0'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        Please follow the steps below to get started with Live lessons:
+                        <ol>
+                          <li>Create a new account on the Dictionary app. You can sign up with Facebook, Google, Apple, or email.</li>
+                          <li>Sign in and click “Live Lessons,” select a lesson and click “Book.”</li>
+                          <li>Select lesson date and time.</li>
+                          <li>Fill in the required information.</li>
+                          <li>Confirm the information and complete the payment.</li>
+                          <li>A notification letter will be sent to your email once you successfully booked a lesson. The booked lesson will be shown on the “Live Lessons” page on your Dictionary app as well.</li>
+                          <li>Click the link in the notification letter to go to the lesson.</li>
+                          <li>Enter “Ponddy Tutors”.</li>
+                          <li>Click “Log in” on the upper right corner with the same Ponddy account that you registered on the Dictionary app.
+                            Click “Tutors.”</li>
+                          <li>Click “Tutors”.</li>
+                          <li>You can enter the lesson 10 minutes before it starts.</li>
+                        </ol>
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_account_1"  (afterExpand)="onFocus(0,'faq_account')" (opened)="clickSmallPanel(true,'faq_account_1')" (closed)="clickSmallPanel(false,'faq_account_0')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            2.How to enter the lesson?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_account_1'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_account_1'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        Once you have successfully booked a lesson, your first experience with Ponddy is ready to go.
+                        <br>
+                        Please follow the steps below to enter the lesson.
+                        <ol>
+                          <li><a href="https://support.zoom.us/hc/en-us/categories/200101697" target="_blank">Download Zoom</a></li>
+                          <li>You will receive the notification letter once a lesson is successfully booked. The booked lesson will be shown on the “Live Lessons” page on your Dictionary app as well.</li>
+                          <li>Click the link in the notification letter, or go to <a href="https://tutors.ponddy.com/" target="_blank">Ponddy Tutors</a> and log in, you can enter the lesson 10 minutes before it starts.</li>
+                          <li>Click on the “Start” button and a pop-up window for launching Zoom will appear.</li>
+                          <li>Click on the “Launch Meeting” button in the pop-up window. If you have already downloaded Zoom, the system will automatically launch your Zoom session. You can also join Zoom from your browser.</li>
+                          <li>You can also take the lesson on mobile devices such as smartphones and tablets.</li>
+                        </ol>
+
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_account_2" (afterExpand)="onFocus(1,'faq_account')" (opened)="clickSmallPanel(true,'faq_account_2')" (closed)="clickSmallPanel(false,'faq_account_2')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <a pageScroll href="#faq_account" style="display: block;width: 100%;text-decoration: none;">
+                            <div class="min_title">
+                              3. How to book a lesson?
+                              <div *ngIf="web" class="icon">
+                                <img *ngIf="faqSmallOpen!='faq_account_2'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                                <img *ngIf="faqSmallOpen=='faq_account_2'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                              </div>
+                            </div>
+                          </a>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        <ol>
+                          <li>Sign in and click “Live Lesson,” select a lesson and click “Book.”</li>
+                          <li>Select lesson date and time.</li>
+                          <li>Fill in the required information.</li>
+                          <li>Confirm the information and complete the payment.</li>
+                          <li>A notification letter will be sent to your email once you successfully booked a lesson. The booked lesson will be shown on the “Live Lessons” page on your Dictionary app as well.</li>
+                        </ol>
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_account_3" (afterExpand)="onFocus(2,'faq_account')" (opened)="clickSmallPanel(true,'faq_account_3')" (closed)="clickSmallPanel(false,'faq_account_3')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            4. How regular are the lessons?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_account_3'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_account_3'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        Live Lessons are limited with special prices.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_account_4" (afterExpand)="onFocus(3,'faq_account')" (opened)="clickSmallPanel(true,'faq_account_4')" (closed)="clickSmallPanel(false,'faq_account_4')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            5. I can’t book the lesson.
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_account_4'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_account_4'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        Bookings are closed 24 hours before the lessons start, please select another time.
+                        <br>
+                        <br>
+                        If you encounter other issues, please do not hesitate to contact <a href="mailto:support@ponddy-edu.com" target="_blank">Ponddy</a> and attach the screenshots of your issues.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_account_5" (afterExpand)="onFocus(4,'faq_account')" (opened)="clickSmallPanel(true,'faq_account_5')" (closed)="clickSmallPanel(false,'faq_account_5')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            6. How to confirm if I book the lesson successfully?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_account_5'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_account_5'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        A notification letter will be sent to your email once you successfully booked a lesson. The booked lesson will be shown on the “Live Lessons” page, the Dictionary app, and your <a href="https://tutors.ponddy.com/" target="_blank">Ponddy Tutors</a>.
+                        <br>
+                        <br>
+                        If you don’t receive the email, or if you encounter any other issues, please do not hesitate to contact <a href="mailto:support@ponddy-edu.com" target="_blank">Ponddy</a>, we will do our best to help you.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_account_6" (afterExpand)="onFocus(5,'faq_account')" (opened)="clickSmallPanel(true,'faq_account_6')" (closed)="clickSmallPanel(false,'faq_account_6')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            7. I can’t complete the payment.
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_account_6'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_account_6'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        If you would like to pay with Apple Pay or Google Pay, please make sure the payment system is set up and activated on your device. You can also proceed with the payment with a credit card.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_account_7" (afterExpand)="onFocus(6,'faq_account')" (opened)="clickSmallPanel(true,'faq_account_7')" (closed)="clickSmallPanel(false,'faq_account_7')">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            8. What’s the refund policy?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_account_7'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_account_7'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        You can request a full refund to any paid Live Lesson 24 hours before the lesson starts.
+                      </div>
+                    </mat-expansion-panel>
+                  </mat-accordion>
+                </div>
+              </div>
+            </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel id="faq_item_1" (afterExpand)="onFocus(0,'faq_item')" (opened)="clickPanel(true,'faq_item_1')" (closed)="clickPanel(false,'faq_item_1')" class="live-lessons-border-bottom">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div class="title">
+                  <img *ngIf="faqOpen!='faq_item_1'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-open.svg">
+                  <img *ngIf="faqOpen=='faq_item_1'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-close.svg">
+                  <div>During the lesson</div>
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="text">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-12">
+                  <mat-accordion>
+                    <mat-expansion-panel id="faq_during_the_lesson_0" (afterExpand)="onFocus(-1,'faq_during_the_lesson')" (opened)="clickSmallPanel(true,'faq_during_the_lesson_0')" (closed)="clickSmallPanel(false,'faq_during_the_lesson_0')" expanded="false" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            1. Is the class time based on my time zone?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_during_the_lesson_0'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_during_the_lesson_0'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        Yes, the timetable is based on the time zone you set up when booking the lesson.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_during_the_lesson_1" (afterExpand)="onFocus(0,'faq_during_the_lesson')" (opened)="clickSmallPanel(true,'faq_during_the_lesson_1')"  (closed)="clickSmallPanel(false,'faq_during_the_lesson_1')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            2. My internet connection is unstable.
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_during_the_lesson_1'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_during_the_lesson_1'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        No worries, please take the following steps to resolve the issue:
+                        <ol>
+                          <li>Close other websites and running applications</li>
+                          <li>Turn off video camera</li>
+                          <li>If you are using Zoom on iPad or other tablets, try to use PC instead</li>
+                          <li>Use another browser, e.g. Google Chrome</li>
+                          <li>Use a wired-network connection instead of Wi-Fi</li>
+                        </ol>
+                        <br>
+                        If the above methods don’t resolve the issue, please try the steps below for troubleshooting:
+                        <ol>
+                          <li><a href="https://zoom.us/test" target="_blank">Joining a Zoom test meeting</a> to test your internet connection</li>
+                          <li>Test if your internet speed is above 8 Mbps. If the speed is below 8 Mbps, your internet may be too slow: <a href="https://fast.com/" target="_blank">https://fast.com/</a></li>
+                        </ol>
+                        <br>
+                        If the issue still exists, please check your internet connection according to <a href="https://support.zoom.us/hc/en-us/articles/201362463-Wireless-WiFi-Connection-Issues" target="_blank">Zoom Support</a>:
+                        <br>
+                        <br>
+                        If you are experiencing any issue(s) with latency, frozen screen, poor quality audio, or meeting getting disconnected while using a home or non-enterprise WiFi connection, try the following:
+                        <ol>
+                          <li>Watch a <a href="https://www.youtube.com/watch?v=UygPcBCFRrA" target="_blank">video</a> about WiFi connectivity</li>
+                          <li>Check your Internet bandwidth using an online speed test, such as <a href="http://www.nperf.com/en/" target="_blank">nperf</a>, <a href="http://www.speedtest.net/" target="_blank">Speedtest</a>, or <a href="http://compari.tech/speed" target="_blank">Comparitech</a></li>
+                          <li>Try to connect directly via Wired (if your internet router has wired ports)</li>
+                          <li>Try bringing your computer or mobile device closer to the WiFi router or access point  in your home or office</li>
+                          <li>Upgrade your WiFi router firmware. Check your WiFi router vendor support site for firmware upgrade availability</li>
+                          <li>Use a WiFi extender such as <a href="http://www.ampedwireless.com/family/repeaters.html" target="_blank">Amped Wireless</a> or Linksys to increase the distance and strength of your WiFi signal</li>
+                          <li>Use a higher-powered/long-range WiFi such as Amped Wireless <a href="http://www.ampedwireless.com/family/routers.html" target="_blank">router</a> or <a href="http://www.ampedwireless.com/family/adapters.html" target="_blank">adapter</a> to increase the WiFi signal on your PC or Mac</li>
+                          <li>[Home] Use a DOCSIS 3.0 cable modem (if you have cable modem) to improve internet performance</li>
+                        </ol>
+                        <br>
+                        If you are on corporate WiFi, try the following:
+                        <ol>
+                          <li>Switch to a Wired connection</li>
+                          <li>Switch to a different WiFi hotspot if possible</li>
+                          <li>Check your Internet bandwidth using an online speed test, such as <a href="http://www.nperf.com/en/" target="_blank">nperf</a>, <a href="http://www.speedtest.net/" target="_blank">Speedtest</a> or <a href="http://compari.tech/speed" target="_blank">Comparitech</a></li>
+                          <li>Contact your corporate IT department to check your WiFi hotspot</li>
+                          <li>Turn off group HD in your <a href="https://support.zoom.us/hc/en-us/articles/201363253-Account-Management" target="_blank">Account Management</a> if your WiFi bandwidth is insufficient</li>
+                          <li>Turn off your corporate VPN if it's not required for the meeting</li>
+                        </ol>
+                        If the issue still cannot be resolved, please record the screen and contact <a href="mailto:support@ponddy-edu.com" target="_blank">Ponddy</a>.🙇
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_during_the_lesson_2" (afterExpand)="onFocus(1,'faq_during_the_lesson')" (opened)="clickSmallPanel(true,'faq_during_the_lesson_2')"  (closed)="clickSmallPanel(false,'faq_during_the_lesson_2')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            3. How to contact Ponddy?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_during_the_lesson_2'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_during_the_lesson_2'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        Please scroll down to “Contact us,” fill in your email address and questions, and click “Send,” Ponddy customer service team will contact you as soon as possible.
+                        <br>
+                        <br>
+                        You can also contact Ponddy via email: <a href="mailto:support@ponddy-edu.com" target="_blank">support@ponddy-edu.com</a>
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_during_the_lesson_3" (afterExpand)="onFocus(2,'faq_during_the_lesson')" (opened)="clickSmallPanel(true,'faq_during_the_lesson_3')"  (closed)="clickSmallPanel(false,'faq_during_the_lesson_3')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            4. I can’t take the lesson because of technical issues.
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_during_the_lesson_3'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_during_the_lesson_3'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        Don’t hesitate to <a href="mailto:support@ponddy-edu.com" target="_blank">contact us</a>, We will reach out to you as soon as we can.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_during_the_lesson_4" (afterExpand)="onFocus(3,'faq_during_the_lesson')" (opened)="clickSmallPanel(true,'faq_during_the_lesson_4')"  (closed)="clickSmallPanel(false,'faq_during_the_lesson_4')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            5. My internet disconnects during the lesson, how do I go back to the lesson?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_during_the_lesson_4'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_during_the_lesson_4'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        Go to Ponddy Tutors dashboard, click on the lesson and launch the Zoom meeting again.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_during_the_lesson_5" (afterExpand)="onFocus(4,'faq_during_the_lesson')" (opened)="clickSmallPanel(true,'faq_during_the_lesson_5')"  (closed)="clickSmallPanel(false,'faq_during_the_lesson_5')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            6. How to enable the audio and video on ZOOM on PC ?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_during_the_lesson_5'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_during_the_lesson_5'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        You can join the Zoom meeting test <a href="https://zoom.us/test" target="_blank">here.</a>
+                        <br>
+                        It is recommended to test your device if it’s your first time joining Zoom, please refer to <a href="https://support.zoom.us/hc/en-us/articles/201362283-%E6%B8%AC%E8%A9%A6%E9%9B%BB%E8%85%A6%E6%88%96%E8%A3%9D%E7%BD%AE%E9%9F%B3%E8%A8%8A" target="_blank">Zoom Support</a> for the guide.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_during_the_lesson_6" (afterExpand)="onFocus(5,'faq_during_the_lesson')" (opened)="clickSmallPanel(true,'faq_during_the_lesson_6')"  (closed)="clickSmallPanel(false,'faq_during_the_lesson_6')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            7. How to enable the audio and video on ZOOM on my smartphone?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_during_the_lesson_6'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_during_the_lesson_6'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        You can join the Zoom meeting test <a href="https://zoom.us/test" target="_blank">here.</a>
+                        <br>
+                        It is recommended to test your device if it’s your first time joining Zoom, please refer to <a href="https://support.zoom.us/hc/en-us/articles/201362283-%E6%B8%AC%E8%A9%A6%E9%9B%BB%E8%85%A6%E6%88%96%E8%A3%9D%E7%BD%AE%E9%9F%B3%E8%A8%8A" target="_blank">Zoom Support</a> for the guide.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_during_the_lesson_7" (afterExpand)="onFocus(6,'faq_during_the_lesson')" (opened)="clickSmallPanel(true,'faq_during_the_lesson_7')"  (closed)="clickSmallPanel(false,'faq_during_the_lesson_7')" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            8. How to enable the audio and video on ZOOM during the lesson ?
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_during_the_lesson_7'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_during_the_lesson_7'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        <b>Audio：</b>
+                        <br>
+                        Please refer to this <a href="https://support.zoom.us/hc/en-us/articles/204484835-My-audio-is-not-working-on-iOS-or-Android#speaker-issues" target="_blank">troubleshooting guide</a>, if there are any other issues, please refer to <a href="https://support.zoom.us/hc/en-us" target="_blank">Zoom Support</a>.
+                        <br>
+                        <br>
+                        <b>Video：</b>
+                        <br>
+                        If you cannot see the teacher’s video, please restart the Zoom meeting. If the issue is not fixed, please refer to this <a href="https://support.zoom.us/hc/en-us/articles/202952568" target="_blank">troubleshooting guide</a>.
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_during_the_lesson_8" (afterExpand)="onFocus(7,'faq_during_the_lesson')" (opened)="clickSmallPanel(true,'faq_during_the_lesson_8')"  (closed)="clickSmallPanel(false,'faq_during_the_lesson_8')">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            9. I can’t hear my tutor.
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_during_the_lesson_8'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_during_the_lesson_8'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        Please check if your headphones are connected to your device, and if you have enabled the audio.
+                      </div>
+                    </mat-expansion-panel>
+                  </mat-accordion>
+                </div>
+              </div>
+            </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel id="faq_item_2" (afterExpand)="onFocus(1,'faq_item')" (opened)="clickPanel(true,'faq_item_2')" (closed)="clickPanel(false,'faq_item_2')">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <div class="title">
+                  <img *ngIf="faqOpen!='faq_item_2'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-open.svg">
+                  <img *ngIf="faqOpen=='faq_item_2'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-close.svg">
+                  <div>System</div>
+                </div>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="text">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-12">
+                  <mat-accordion>
+                    <mat-expansion-panel id="faq_system_0" (afterExpand)="onFocus(-1,'faq_system')" (opened)="clickSmallPanel(true,'faq_system_0')" (closed)="clickSmallPanel(false,'faq_system_0')" expanded="false" class="live-lessons-border-bottom">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div></div>
+                          <div class="min_title">
+                            1. System requirements
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_system_0'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_system_0'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        You can take the lessons on various devices, including Windows and Mac desktops/laptops, as well as Android and iOS mobile devices. Please see below requirements for each system:
+                        <br>
+                        <br>
+                        <b>Minimum system requirements</b>
+                        <ul>
+                          <li>The latest Chrome, Firefox, Safari, Edge or Opera for desktop/laptop</li>
+                          <li>A broadband connection with a minimum speed of 5Mbit or 800kbps</li>
+                        </ul>
+                        <br>
+                        <b>System requirements for PC</b>
+                        <ul>
+                          <li>Platform: Windows 8.1 or higher with the latest updates installed</li>
+                          <li>RAM: 4GB or more</li>
+                          <li>Video: Graphics output capability</li>
+                          <li>Sound: Sound output capability</li>
+                        </ul>
+                        <br>
+                        <b>System requirements for macOS</b>
+                        <ul>
+                          <li>Platform: Mac OS X 10.12 or higher with the latest updates installed</li>
+                          <li>RAM: 4GB or more</li>
+                          <li>Video: Graphics output capability</li>
+                          <li>Sound: Sound output capability</li>
+                        </ul>
+                        <br>
+                        <b>System requirements for mobile</b>
+                        <ul>
+                          <li>iOS 13.0 and above</li>
+                          <li>Android 6.0 and above</li>
+                          <li>Mobile browsers: Safari or Chrome on iOS and Chrome on Android </li>
+                        </ul>
+                      </div>
+                    </mat-expansion-panel>
+
+                    <mat-expansion-panel id="faq_system_1" (afterExpand)="onFocus(0,'faq_system')" (opened)="clickSmallPanel(true,'faq_system_1')" (closed)="clickSmallPanel(false,'faq_system_1')">
+                      <mat-expansion-panel-header>
+                        <mat-panel-title>
+                          <div class="min_title">
+                            2. Getting started with Zoom
+                            <div *ngIf="web" class="icon">
+                              <img *ngIf="faqSmallOpen!='faq_system_1'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-open.svg">
+                              <img *ngIf="faqSmallOpen=='faq_system_1'" src="https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/faq-small-close.svg">
+                            </div>
+                          </div>
+                        </mat-panel-title>
+                      </mat-expansion-panel-header>
+                      <div class="text">
+                        <b>On PC/Mac：</b>
+                        <br>
+                        If this is your first lesson, you will be prompted to download the plugin when you launch your lesson. The software is lightweight at 130Kb and will not require any settings to be changed. You can also download Zoom <a href="https://support.zoom.us/hc/en-us/categories/200101697" target="_blank">here</a>.
+                        <br>
+                        <br>
+                        <b>On mobile device：</b>
+                        <br>
+                        On a mobile device, the Zoom app can be downloaded from the <a href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en_GB" target="_blank">Google PlayStore</a> or <a href="https://itunes.apple.com/us/app/zoom-cloud-meetings/id546505307?mt=8" target="_blank">Apple App store</a>.
+                        <br>
+                        <br>
+                        We also highly recommend that students use a computer with a microphone and webcam for the best learning experience. Headphones are also recommended.
+                        <br>
+                        <br>
+                        ＊If this is your first time using Zoom, it’s strongly recommended to <a href="https://zoom.us/test" target="_blank">test a Zoom meeting</a> in advance.
+                        <br>
+                        <br>
+                        For more instructions on Zoom, please see <a href="https://support.zoom.us/hc/en-us/categories/200101697" target="_blank">here</a>.
+                      </div>
+                    </mat-expansion-panel>
+                  </mat-accordion>
+                </div>
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+    </div>
+  </div>
+</section>

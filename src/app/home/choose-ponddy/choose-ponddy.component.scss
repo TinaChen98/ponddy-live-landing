@@ -1,0 +1,83 @@
+.choose-ponddy {
+  padding: 60px 0;
+  background: linear-gradient(to top right, #13AEDF 50%, #25B5E0 50%);
+
+  &__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    padding-bottom: 64px;
+    @media (max-width: 991px) {
+      font-size: 28px;
+      line-height: 44px;
+      padding-bottom: 44px;
+      text-align: left;
+    }
+  }
+
+  .choose-ponddy__content {
+    display: flex;
+    @media (max-width: 991px) {
+      display: block;
+    }
+
+    .small-title {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 36px;
+      color: #FFFFFF;
+      padding-bottom: 26px;
+      @media (max-width: 991px) {
+        font-size: 22px;
+        line-height: 36px;
+        padding-bottom: 16px;
+      }
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 36px;
+      color: #FFFFFF;
+      @media (max-width: 991px) {
+        font-size: 16px;
+        line-height: 30px;
+      }
+      ul {
+        padding-inline-start: 20px;
+        list-style: none;
+        @media (max-width: 991px) {
+          padding-inline-start: 27px;
+        }
+        li {
+          list-style-image:url('https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/group.svg');
+          padding-left: 14px;
+        }
+      }
+    }
+
+    .img {
+      max-width: 362px;
+      padding-bottom: 15px;
+      img {
+        border-radius: 12px;
+      }
+    }
+
+    .m-w {
+      max-width: 30%;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
+    .pr-56 {
+      margin-right: 56px;
+      @media (max-width: 991px) {
+        margin-right: 15px;
+        padding-bottom: 56px;
+      }
+    }
+  }
+}

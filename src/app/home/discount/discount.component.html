@@ -1,0 +1,27 @@
+<section class="discount">
+  <div class="container">
+    <p *ngIf="mobile">Special discount only available for dictionary app users</p>
+    <div class="row justify-content-center">
+      <div class="discount-mobile">
+        <div class="discount__img col-4 col-md-3">
+          <img *ngIf="web" [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/discount-mobile-w.png'" alt="First slide">
+          <img *ngIf="mobile" [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/discount-mobile-p.png'" alt="First slide">
+        </div>
+        <div class="discount__content col-8 col-md-9">
+          <p *ngIf="web">Special discount only available for dictionary app users</p>
+          <div class="button">
+            <a class="md-r pd_shadow_10" href="https://apps.apple.com/app/id1569799653" target="_blank">
+              <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/app-store-w.svg'" alt="apple store">
+            </a>
+            <a class="md-r pd_shadow_10" href="https://play.google.com/store/apps/details?id=com.ponddy.dictionary" target="_blank">
+              <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/google-play-w.svg'" alt="google play">
+            </a>
+            <button class="btn_general-primary text_btn" (click)="openDialog()">
+              Get it now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

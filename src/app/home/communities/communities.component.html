@@ -1,0 +1,40 @@
+<section class="communities">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="communities__content">
+        <div class="title">
+          From the Ponddy Communities
+        </div>
+        <div class="description">
+          users from 100+ countries are already learning Chinese with Ponddy !
+        </div>
+
+        <ng-container *ngFor="let user of user;let i=index">
+          <div *ngIf="this.now_user==i" class="user-content col-md-12">
+            <div class="comma ">
+              <img class="" [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/comma-left.svg'">
+            </div>
+            <div class="comma-m ">
+              {{ user.userContent }}
+            </div>
+            <div class="comma comma-bottom ">
+              <img [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/comma-right.svg'">
+            </div>
+          </div>
+
+          <div *ngIf="this.now_user==i"  class="user-from col-md-12">
+            {{ user.userFrom }}
+          </div>
+        </ng-container>
+
+        <div class="user-img">
+          <ng-container *ngFor="let user of user;let i=index">
+            <div (click)="nowUser(i)">
+              <img [class.mr-42]="i!=3" [class.user-opacity]="now_user==i" [lazyLoad]="user.userImg">
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

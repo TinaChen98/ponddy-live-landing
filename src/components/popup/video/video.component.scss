@@ -1,0 +1,45 @@
+.video {
+  background-color: white;
+  border-radius: 8px;
+  &__content {
+    position: relative;
+
+    ::ng-deep .mat-dialog-content {
+      padding: 0;
+    }
+
+    iframe {
+      max-width: 670px;
+      @media (max-width: 817px) {
+        max-width: 78vw;
+        height: 44vw;
+      }
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      margin-top: -4px;
+      img {
+        max-width: 120px;
+      }
+    }
+    .btn_general-primary {
+      border: none;
+      width: 100%;
+      max-width: 288px;
+      outline: none;
+      background: #6ACFED;
+      border-radius: 24px;
+      padding: 12px 24px;
+      min-width: 160px;
+    }
+    .close_btn {
+      display: flex;
+      justify-content: center;
+      padding: 16px 0;
+      margin-top: -4px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<section class="contact-us">
+  <div class="container">
+    <div class="row" [class.justify-content-center]="mobile">
+      <div class="contact-us__content col-11 col-md-12">
+        <div class="title">
+          Contact us
+        </div>
+        <div class="description">
+          <div>
+            Do you have questions or comments for us ?
+          </div>
+          <div>
+            We'd love to hear them !
+          </div>
+        </div>
+        <form (submit)="sendEmail($event)">
+          <div class="form">
+            <input type="hidden" name="title" value="Ponddy Tutors - Live Lessons">
+            <input type="hidden" name="source" value="Tutors landing - Live Lessons">
+            <input type="hidden" name="fieldEmail" value="Email: ">
+            <input type="hidden" name="fieldQuestions" value="Comments or Questions: ">
+            <input type="hidden" name="sourceUrl" value="https://live.ponddy.com/">
+            <div class="content-email">
+              <input type="email" name="email" placeholder="Your Email Account" (keyup)="onEmail($event)">
+              <p *ngIf="email==false" style="margin: 0;color: #F86B82;">Email 格式錯誤</p>
+            </div>
+            <div class="content-text" >
+              <textarea placeholder="Please leave your comments or questions here." (keyup)="onQuestions($event)" name="questions"></textarea>
+            </div>
+            <div class="re-captcha">
+              <re-captcha
+                #captchaRef="reCaptcha"
+                (resolved)="resolved($event)"
+                (error)="onError($event)"
+                errorMode="handled"
+                size="invisible"
+              ></re-captcha>
+            </div>
+          </div>
+          <div>
+            <input type="submit" value="Send" class="btn_general-primary text_btn" [class.contact-us__btn__disabled]="!onDisabled" [disabled]="!onDisabled">
+            <!-- <input type="submit" (click)="captchaRef.execute()" value="Send" class="btn_general-primary text_btn" [class.contact-us__btn__disabled]="!onDisabled" [disabled]="!onDisabled"> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

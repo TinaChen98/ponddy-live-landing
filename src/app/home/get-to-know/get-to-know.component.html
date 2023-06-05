@@ -1,0 +1,20 @@
+<section class="get-to-know">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="get-to-know__img col-12 col-md-7">
+        <img *ngIf="web" [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/understand-w.png'">
+      </div>
+      <div class="get-to-know__content col-12 col-md-5">
+        <div>
+          <span>Get to know <br>Live Lessons</span>
+          <a class="btn_general-secondary text_btn" (click)="openDialogVideo()">
+            Watch Now
+          </a>
+        </div>
+      </div>
+      <div class="get-to-know__img col-12">
+        <img *ngIf="mobile" [lazyLoad]="'https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/understand-p.png'">
+      </div>
+    </div>
+  </div>
+</section>

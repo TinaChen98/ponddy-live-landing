@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import "src/assets/font/PonddyNotoRubik";
+@import '~bootstrap/scss/bootstrap';
+@import "src/assets/ponddy-guidline.scss";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  max-width: 100vw;
+  background-color: #FBFCFC;
+}
+
+* {
+  font-family: Ponddy-NotoRubik, sans-serif ;
+}
+
+img {
+  width: 100%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,47 @@
+.effective {
+  background-image: url('https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/effective-bg-w.jpg');
+  background-size: cover;
+  padding: 71px 0;
+  text-align: center;
+  @media (max-width: 991px) {
+    background-image: url('https://d2zu2xr8ooiuow.cloudfront.net/live-lessons/download-bg-p.png');
+    padding: 50px 17px 60px 17px;
+  }
+  &__content {
+    .title {
+      font-weight: bold;
+      font-size: 31px;
+      line-height: 33px;
+      letter-spacing: 1px;
+      color: #FFFFFF;
+      padding-bottom: 24px;
+
+      @media (max-width: 991px) {
+        font-size: 30px;
+        line-height: 44px;
+      }
+    }
+
+    .description {
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 33px;
+      letter-spacing: 1px;
+      color: #FFFFFF;
+      padding-bottom: 24px;
+
+      @media (max-width: 991px) {
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+
+    .btn_general-secondary {
+      padding: 12px 95px;
+
+      @media (max-width: 991px) {
+        padding: 10px 80px;
+      }
+    }
+  }
+}
