@@ -6,7 +6,8 @@
     "start": "ng serve --host 0.0.0.0 --disable-host-check --port 4000",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "pages:push": "npx ngh --dir=dist/live-landing/"
   },
   "private": true,
   "dependencies": {
